@@ -4,111 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/styles.css" />
     <title>Adopt, Don't Shop!</title>
-    <style>
-      html {
-        text-align: center;
-        background: radial-gradient(
-          905px at 4.9% 85.8%,
-          rgb(255, 243, 242) 0.1%,
-          rgb(255, 247, 220) 57.6%
-        );
-        background-size: cover;
-      }
-      h1 {
-        text-align: center;
-        margin-left: 35px;
-        color: #353c41;
-        font-size: 45px;
-        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-          "Lucida Sans", Arial, sans-serif;
-      }
-      h2 {
-        text-align: center;
-        color: #d3494e;
-        font-size: 30px;
-        font-family: "Times New Roman", Times, serif;
-      }
-
-      img {
-        display: block;
-        margin: 0 auto;
-        padding: 15px;
-        border-radius: 35px;
-        max-width: 65%;
-      }
-
-      ol {
-        text-align-last: center;
-        list-style-position: inside;
-        font-weight: bold;
-        font-size: 20px;
-        color: #353c41;
-        margin-right: 10px;
-        padding: 20px;
-        line-height: 2;
-      }
-
-      ol span {
-        font-weight: normal;
-        font-size: 20px;
-        color: #353c41;
-      }
-
-      button:hover {
-        opacity: 0.9;
-        cursor: pointer;
-      }
-      .container {
-        display: inline-block;
-        justify-content: center;
-        border: none;
-        border-radius: 10px;
-        box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.1);
-        margin-left: 300px;
-        margin-right: 300px;
-        background-color: white;
-      }
-      .line {
-        width: 55%;
-        border: 0.5px solid #e3e3e3;
-        border-radius: 5px;
-        box-shadow: 2px rgba(0, 0, 0, 0.3);
-      }
-
-      .footer {
-        text-align: center;
-        font-size: 15px;
-      }
-
-      .help {
-        display: block;
-        text-align: center;
-        text-decoration: none;
-        color: #455d7a;
-        font-weight: bolder;
-        font-size: 20px;
-        padding: 20px 20px 10px 20px;
-      }
-      .help:hover {
-        text-decoration: underline;
-      }
-      .AdoptNow {
-        display: block;
-        margin: 35px auto;
-        background: #d3494e;
-        color: #e3e3e3;
-        font-size: 17px;
-        font-family: Arial, Helvetica, sans-serif;
-        padding: 20px 25px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        border: none;
-        border-radius: 30px;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-        transition: all 200ms ease-in-out;
-      }
-    </style>
   </head>
   <body>
     <div class="container">
@@ -153,23 +50,6 @@
         <a href="https://www.facebook.com/luiza.andouille">Luiza Moshkin</a>
       </p>
     </div>
-
-    <script>
-      function adopt() {
-        let name = prompt("What is your name?");
-        let email = prompt("What is your email address?");
-        let pet = prompt("Are you looking for a pet?");
-        if (pet === "yes") {
-          alert(
-            "Congrats, " + name + "! We will contact you soon" + " 🐶" + " 🐱"
-          );
-        } else {
-          alert("No worries, " + name + "! Maybe, one day" + " 🐶" + " 🐱");
-        }
-      }
-
-      let button = document.querySelector(".AdoptNow");
-      button.addEventListener("click", adopt);
-    </script>
   </body>
+  <link rel="stylesheet" href="/app/app.js" />
 </html>
