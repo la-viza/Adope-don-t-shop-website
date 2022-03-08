@@ -1,4 +1,7 @@
 html {
+  position: relative;
+  max-width: 100%;
+  height: auto;
   text-align: center;
   background: radial-gradient(
     905px at 4.9% 85.8%,
@@ -9,6 +12,7 @@ html {
 }
 h1 {
   text-align: center;
+  padding-top: 30px;
   margin-left: 35px;
   color: #353c41;
   font-size: 45px;
@@ -52,13 +56,19 @@ button:hover {
   cursor: pointer;
 }
 .container {
-  display: inline-block;
-  justify-content: center;
+  width: 980px;
+  height: 100%;
+  background-color: white;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0px;
+  bottom: 20px;
+  text-align: center;
   border: none;
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.1);
-  margin-left: 300px;
-  margin-right: 300px;
   background-color: white;
 }
 .line {
@@ -86,7 +96,6 @@ button:hover {
   text-decoration: underline;
 }
 .AdoptNow {
-  display: block;
   margin: 35px auto;
   background: #d3494e;
   color: #e3e3e3;
@@ -99,4 +108,26 @@ button:hover {
   border-radius: 30px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   transition: all 200ms ease-in-out;
+}
+
+@media (max-width: 920px) {
+  html {
+    max-width: 100%;
+    height: auto;
+  }
+  .container {
+    max-width: 100%;
+    height: auto;
+  }
+  h1 {
+    text-align: center;
+    font-size: 37px;
+    margin-left: 10px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  ol {
+    padding: 5px;
+  }
 }
